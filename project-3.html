@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Projects - Ball Balancing Robot</title>
+    <meta name="description" content="Drawing Robot" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/jpeg/profile-image.jpeg"
+              alt="Profile Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Caleb Savard</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./about.html" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./project-main.html" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./about.html"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./project-main.html"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+
+          <h1 class="heading-primary">Ball Balancing Robot</h1>
+          
+          <div class="project-details__content-main">
+
+            <div class="project-details__showcase-img-cont">
+              <a href="./assets/Project 3 - Balancing Platform/Main.jpg">
+                <img
+                  src="./assets/Project 3 - Balancing Platform/Main_s.jpg"
+                  alt="Tilting Platform"
+                  class="project-details__showcase-img"
+                />
+              </a>
+
+            </div>
+  
+            
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Skills Showcased</h3>
+              <div class="skills">
+                <div class="skills__skill">Python</div>
+                <div class="skills__skill">Kinematic Analysis</div>
+                <div class="skills__skill">MATLAB</div>
+                <div class="skills__skill">Simulink</div>
+              </div>
+            </div>
+            
+            <div class="project-details__desc">
+
+              <p class="project-details__desc-para">
+                This robot balances a ball on a tilting resistive touch panel. The hardware was prebuilt since, as the term project for my first Mechatronics class, the emphasis was on the software. The project involved sensor and motor control, serial communication, kinetic and kinematic analysis, and control loop algorithms. Our longest balance time was 24 seconds, which we believed to be limited by hardware problems.
+              </p>
+    
+              <div class="videoWrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NKaWso9O1-o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+
+              <h3 class="project-details__content-title">Background</h3>
+
+              <p class="project-details__desc-para">
+                The software for this project was written in microPython, a version of Python adapted for the limited resources of microcontrollers. The microcontroller for this project was an STM32 Nucleo, loaded with the microPython firmware and mounted on a 'Shoe of Brian' PCB to allow for easier access to the serial port.
+              </p>
+
+              <p class="project-details__desc-para">
+                The tilt table was actuated by two DC motors (one for each axis), connected to lever arms with belts. This setup is not quite linear, but its close enough for this project. Mounted on the tilt table was a 4-wire resistive touch panel and a BNO055 IMU. These sensors were used to locate the ball on the table, and read the orientation of the table.
+              </p>
+
+              <h3 class="project-details__content-title">Functionality and Features</h3>
+
+              <p class="project-details__desc-para">
+                The main functions of the device are printed to the serial port during initialization.
+              </p>
+
+              <figure>
+                <a href="./assets/Project 3 - Balancing Platform/1.png">
+                  <img 
+                  src="./assets/Project 3 - Balancing Platform/1_s.png"
+                  alt="Terminal Menu"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+                <figcaption>
+                  Main user menu of the robot. This is printed in the serial terminal where the user can type letters to control the robot.
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                Aside from the balancing feature (initiated by pressing W and placing the ball on the panel), data from the sensors could be printed to serial, motors could be manually controlled, and a datalog could be made. 
+              </p>
+
+              <figure>
+                <a href="./assets/Project 3 - Balancing Platform/2.png">
+                  <img 
+                  src="./assets/Project 3 - Balancing Platform/2_s.png"
+                  alt="Path plot"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+                <figcaption>
+                  A plot of the logged ball position during a balancing run. This is the path the ball took as the robot attempted to balance it.
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                We also implemented some developer commands allowing the user to edit PID control values and clear calibration constants for testing purposes.
+              </p>
+
+              <p class="project-details__desc-para">
+                Not shown in the menu is the calibration process, which runs on startup unless values have already been saved to a file on the Nucleo's memory. This process ensures that values from the touch panel and IMU are accurate.
+              </p>
+
+              <h3 class="project-details__content-title">Tasks</h3>
+
+              <p class="project-details__desc-para">
+                The robot runs on a cooperative multitasking system, where a number of tasks quickly repeat one after another to mimic true multitasking. In this sort of system, it is critical that each task is short. Any task which takes too long can hold up, or block, the entire system.
+              </p>
+
+              <p class="project-details__desc-para">
+                The most visible of these tasks is the <b>taskUser</b>>. It handles the sensor initialization and calibration, user menu display, user input, and serial printing. It is taskUser which commands the other tasks to respond based on user input.
+              </p>
+
+              <p class="project-details__desc-para">
+                Both sensors have their own dedicated tasks (<b>taskIMU</b> and <b>taskPanel</b>) which handle calibration which commanded by the User Task, and otherwise collect data from the sensors and supply it to other tasks.
+              </p>
+
+              <p class="project-details__desc-para">
+                The hardware control system consists of three tasks. <b>taskAngleController</b> takes the sensor input and uses a PID control algorithm to output a target angle for the tilt table. <b>taskMotorController</b> then takes these target angles and specifies a duty cycle for each motor. Finally, <b>taskMotors</b> writes these duty cycles to the motor driver hardware.
+              </p>
+
+              <p class="project-details__desc-para">
+                The last task in the system is <b>taskDataCollect</b>, which logs the table angle and ball position for a certain duration, then writes the data to a .txt file on the Nucleo's memory.
+              </p>
+
+              <figure>
+                <a href="./assets/Project 3 - Balancing Platform/3.png">
+                  <img 
+                  src="./assets/Project 3 - Balancing Platform/3_s.png"
+                  alt="Task Diagram"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+                <figcaption>
+                  This diagram shows how all the tasks communicate with each other.
+                </figcaption>
+              </figure>
+
+              <h3 class="project-details__content-title">Simulation</h3>
+
+              <p class="project-details__desc-para">
+                In preparation for this assignment, and to better understand the kinematics of the system, we were tasked with creating a 2D simulation in MATLAB which could predict the motion of the system given the location and velocity of the ball and the platform, as well as the torque input. The full simulation code is linked at the bottom of this page.
+              </p>
+
+              <figure>
+                <a href="./assets/Project 3 - Balancing Platform/4.png">
+                  <img 
+                  src="./assets/Project 3 - Balancing Platform/4_s.png"
+                  alt="Simulation validation plots"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+                <figcaption>
+                  These plots show the simulation results for what would happen if the ball were placed, motionless, 5cm from the center of the unpowered platform.
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                To learn about the tuning process and eliminate some of the inconsistencies of real life, I created a Simulink PID control system that could interact with the simulation we had already written. 
+              </p>
+
+              <figure>
+                <a href="./assets/Project 3 - Balancing Platform/6.png">
+                  <img 
+                  src="./assets/Project 3 - Balancing Platform/6_s.png"
+                  alt="Simulink block diagram"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+                <figcaption>
+                  The Simulink block dagram used as a virtual control system to aid PID tuning.
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                My intent was to quickly tune the virtual system, where tests could happen instantly instead of waiting for the system to stabilize, then transfer those PID values to the real robot to give us a good place to start. The following response graph shows system stability.
+              </p>
+
+              <figure>
+                <a href="./assets/Project 3 - Balancing Platform/7.png">
+                  <img 
+                  src="./assets/Project 3 - Balancing Platform/7_s.png"
+                  alt="Response plot"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+                <figcaption>
+                  The response of the control system when the ball is placed, motionless, 5cm from the center.
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                Unfortunately, the physical values used in our system simulation were not representative of the real system, which meant the PID values we developed virtually were not relevant to the physical control system. Additionally, the simulation did not account for hardware problems, such as motor torque limits or belt slipping. In the end, it was useful to get practice tuning an ideal system, but it did not give us good values to start tuning the real machine.
+              </p>
+
+
+              <h3 class="project-details__content-title">Results and Conclusion</h3>
+
+              <p class="project-details__desc-para">
+                My favorite part about this project was getting to learn to write code that actually interfaced with hardware. I had dabbled in Arduino blinking light sketches and was proficient in MATLAB, but this was the first time I saw what I wrote making a physical object move, which was really exciting for me! I also appreciated having a teacher (and a teammate) to answer questions and point me in the right direction. This was the class that got me past the bar of entry for DIY mechatronics and enabled me to continue to learn on my own with the help of google. 
+              </p>
+
+              <p class="project-details__desc-para">
+                Our longest balance time was 24 seconds, which was among the highest in the class. We thought the system could balance longer if we had more time to tune and make changes to the hardware, but I'm pretty happy with the results we achieved.
+              </p>
+
+            </div>
+            
+            <div class="project-details__links">
+              <h3 class="project-details__content-title">More Details</h3>
+              <a
+                href="https://calebsavard.bitbucket.io/term_proj.html"
+                class="btn btn--med btn--theme project-details__links-btn"
+                target="_blank"
+                >Build Documentation</a
+              >
+
+              <a
+                href="assets/Project 3 - Balancing Platform/HW3_matlab.html"
+                class="btn btn--med btn--theme project-details__links-btn"
+                target="_blank"
+                >Simulation Report</a
+              >
+
+              <a
+                href="https://www.youtube.com/watch?v=NKaWso9O1-o"
+                class="btn btn--med btn--theme-inv project-details__links-btn"
+                target="_blank"
+                >Video</a
+              >
+            </div>
+
+            <div class="project-details__links">
+              <h3 class="project-details__content-title">Contributers</h3>
+
+              <div class = "contributer_block">
+                <div class = "contributer_single">
+                  <div>
+                    <img src="assets/Contributers/chris.jpg"
+                    alt="Chris Linthacum profile" class="contributer_logo-img"/>
+                  </div>
+                  <div>
+                    <p class="contributer_text">
+                      Chris Linthacum
+                    </p>
+                    
+                    <a href="https://www.linkedin.com/in/clinthacum/" target="new">
+                      <img src="./assets/png/linkedin-ico.png" alt="icon" class="contributer_link-icon"/>
+                    </a>
+                    
+                  </div>
+                </div>
+                
+                
+                <div class = "contributer_single">
+                  <div>
+                    <img src="./assets/Contributers/calpoly_logo.png"
+                    alt="Calpoly logo" class="contributer_logo-img"/>
+                  </div>
+                  <div>
+                    <p class="contributer_text">
+                      Cal Poly
+                    </p>
+
+                    <a href="https://me.calpoly.edu/" target="new">
+                      <img src="./assets/png/website-ico.png" alt="icon" class="contributer_link-icon"/>
+                    </a>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Caleb Savard</h4>
+            <!-- <p class="main-footer__short-desc">
+              LIkes hiking and good pasta.
+            </p> -->
+            
+            <a href="./#contact" class="main-footer__short-desc"><u>Contact</u></a>
+            <a href="https://www.linkedin.com/in/caleb-savard-89a98b159/" class="main-footer__short-desc" target="new"><u>LinkedIn</u></a>
+          </div>
+        </div>
+
+        <div class="main-footer__lower">
+          
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

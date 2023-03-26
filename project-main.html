@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Projects</title>
+    <meta name="description" content="Shingle Brush" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Java for filtering -->
+    <script src="/js/script.js"></script>
+
+  </head>
+  <body onload="init_page()">
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/jpeg/profile-image.jpeg"
+              alt="Profile Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Caleb Savard</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./about.html" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./project-main.html" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./about.html"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./project-main.html"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    
+    <section class="projects">
+      
+      <div id="filterBtnContainer">
+        <button class="filter-btn active" onclick="filterSelection('all')">All</button>
+        <button class="filter-btn" onclick="filterSelection('mechanicalDesign')">Mechanical Design</button>
+        <button class="filter-btn" onclick="filterSelection('fabrication')">Fabrication</button>
+        <button class="filter-btn" onclick="filterSelection('electronics')">Electronics</button>
+        <button class="filter-btn" onclick="filterSelection('software')">Software</button>
+      </div>
+
+      <ul class="project-list">
+        <li class="project-item  mechanicalDesign fabrication">
+          <a href="project-6.html">
+
+            <figure class="project-img">
+              <img src="./assets/Project 6 - Shingle Brush/thumb.png" alt="industrial machine">
+            </figure>
+
+            <h3 class="project-title">Shingle Brush</h3>
+
+            <div class="skills project-categories">
+              <div class="skills__tags">Mechanical Design</div>
+              <div class="skills__tags">Decision Matrices</div>
+              <div class="skills__tags">SolidWorks</div>
+              <div class="skills__tags">FEA</div>
+              <div class="skills__tags">Fabrication</div>
+              <div class="skills__tags">Sheet Metal</div>
+              <div class="skills__tags">Test Design</div>
+              <div class="skills__tags">Technical Writing</div>
+            </div>
+            <p class="project-description">My Senior Project was designing a device for removing excess asphalt particles from the production line at the GAF facility in Shafter, CA. In testing, the resulting device removed over 80% of the loose particles without damaging the product.</p>
+
+          </a>
+        </li>
+
+        <li class="project-item  mechanicalDesign electronics software">
+          <a href="project-5.html">
+
+            <figure class="project-img">
+              <img src="./assets/Project 5 - Sumo Robot/thumb.jpg" alt="robot">
+            </figure>
+
+            <h3 class="project-title">Sumo Robot</h3>
+
+            <div class="skills project-categories">
+              <div class="skills__tags">Embedded C++</div>
+              <div class="skills__tags">Driver Programming</div>
+              <div class="skills__tags">PCB Design</div>
+              <div class="skills__tags">Datasheet Comprehension</div>
+              <div class="skills__tags">Fusion 360</div>
+              <div class="skills__tags">3D Printing</div>
+              <div class="skills__tags">Mechanical Design</div>
+              <div class="skills__tags">Soldering</div>
+              <div class="skills__tags">Fabrication</div>
+            </div>
+
+            <p class="project-description">With a team of 2 others, I designed and built this sumo robot from scratch including the PCB and software. It competed against other teams from our class, ranking 1st among 5 teams.</p>
+
+          </a>
+        </li>
+
+        <li class="project-item  mechanicalDesign electronics software">
+          <a href="project-4.html">
+
+            <figure class="project-img">
+              <img src="./assets/Project 4 - Drawing Robot/thumb.jpeg" alt="robot with wires">
+            </figure>
+
+            <h3 class="project-title">Drawing Robot</h3>
+
+            <div class="skills project-categories">
+              <div class="skills__tags">Mechanical Design</div>
+              <div class="skills__tags">SolidWorks</div>
+              <div class="skills__tags">Python</div>
+              <div class="skills__tags">Kinematic Analysis</div>
+              <div class="skills__tags">3D Printing</div>
+            </div>
+
+            <p class="project-description">This device draws images from an .hpgl file. While the electronics were already made, my partner and I designed and built the mechanical hardware and software.</p>
+
+          </a>
+        </li>
+
+        <li class="project-item  software">
+          <a href="project-3.html">
+
+            <figure class="project-img">
+              <img src="./assets/Project 3 - Balancing Platform/thumb.jpg" alt="Balencing robot">
+            </figure>
+
+            <h3 class="project-title">Balancing Platform</h3>
+
+            <div class="skills project-categories">
+              <div class="skills__tags">Python</div>
+              <div class="skills__tags">Kinematic Analysis</div>
+              <div class="skills__tags">MATLAB</div>
+              <div class="skills__tags">Simulink</div>
+              <div class="skills__tags">System Controls</div>
+            </div>
+
+            <p class="project-description">For this project, a partner and I wrote the necessary software to make this platform actively balance a small ball on top of it.</p>
+
+          </a>
+        </li>
+
+        <li class="project-item  fabrication mechanicalDesign">
+          <a href="project-2.html">
+
+            <figure class="project-img">
+              <img src="./assets/Project 2 - Tool Racks/thumb.jpg" alt="tool rack">
+            </figure>
+
+            <h3 class="project-title">Tool Racks</h3>
+
+            <div class="skills project-categories">
+              <div class="skills__tags">Fabrication</div>
+              <div class="skills__tags">SolidWorks Analysis</div>
+              <div class="skills__tags">Sheet Metal</div>
+              <div class="skills__tags">Mechanical Design</div>
+              <div class="skills__tags">Waterjet</div>
+            </div>
+
+            <p class="project-description">I made a variety of tool racks to help keep the shop organized. They turned out good enough that a set was sent to our other location.</p>
+
+          </a>
+        </li>
+      </ul>
+    </section>
+
+
+
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Caleb Savard</h4>
+            <!-- <p class="main-footer__short-desc">
+              LIkes hiking and good pasta.
+            </p> -->
+            
+            <a href="./#contact" class="main-footer__short-desc"><u>Contact</u></a>
+            <a href="https://www.linkedin.com/in/caleb-savard-89a98b159/" class="main-footer__short-desc" target="new"><u>LinkedIn</u></a>
+          </div>
+        </div>
+
+        <div class="main-footer__lower">
+          
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

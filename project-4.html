@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Projects - Drawing Robot</title>
+    <meta name="description" content="Drawing Robot" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <SCRIPT SRC='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></SCRIPT>
+    <SCRIPT>MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</SCRIPT>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/jpeg/profile-image.jpeg"
+              alt="Profile Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Caleb Savard</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./about.html" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./project-main.html" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./about.html"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./project-main.html"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+
+          <h1 class="heading-primary">Drawing robot</h1>
+
+          <div class="project-details__content-main">
+
+            <div class="project-details__showcase-img-cont">
+              <a href="./assets/Project 4 - Drawing Robot/Main.jpeg">
+                <img
+                  src="./assets/Project 4 - Drawing Robot/Main_s.jpeg"
+                  alt="Device with wires everywhere"
+                  class="project-details__showcase-img"/>
+              </a>
+            </div>
+            
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Skills Showcased</h3>
+              <div class="skills">
+                <div class="skills__skill">Mechanical Design</div>
+                <div class="skills__skill">SolidWorks</div>
+                <div class="skills__skill">Python</div>
+                <div class="skills__skill">Kinematic Analysis</div>
+                <div class="skills__skill">3D Printing</div>
+              </div>
+            </div>
+            
+            <div class="project-details__desc">
+
+              <p class="project-details__desc-para">
+                This robot was the final project for my second Mechatronics class. It draws any image with a pen, and can even write letters input by the user. My partner designed and built all the hardware, and wrote all the code. Since the software was written in microPython (a version of python designed for microcontrollers), no libraries were available, so we got the opportunity to write everything from the ground up.
+              </p>
+    
+              <div class="videoWrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HhL63wO71e4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>    
+              
+              <h3 class="project-details__content-title">Background</h3>
+
+              <p class="project-details__desc-para">
+                The assignment was to create a plotter robot which could draw images from an uploaded .hpgl file. The catch was that cartesian coordinates were not allowed. This made the kinematics more challenging and resulted in more interesting robots. We were required to use stepper motors for the two primary actuators. Our professor provided an STM Nucleo microcontroller and a custom stepper motor driver board, as well as a variety of salvaged parts.
+              </p>
+
+              <h3 class="project-details__content-title">Mechanical Design</h3>
+
+              <p class="project-details__desc-para">
+                Our robot is basically a triangle with two sides of variable length. Changing the length of these sides positions the pen at the intersection. We chose this layout simply because we though it would look neat.
+              </p>
+
+              <figure>
+                <a href="./assets/Project 4 - Drawing Robot/1.gif">
+                  <img 
+                  src="./assets/Project 4 - Drawing Robot/1_s.gif"
+                  alt="Robot 2D Simulation"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+                <figcaption>
+                  The triangle design can locate the pen by controlling the length of the two legs.
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                To accurately control the length of the sides, we iterated through a number of ideas to develop a leadscrew design where the nut is rotated around a static shaft. The advantages of this system over a smooth friction-driven shaft or a rack-and-pinion is that the shaft cannot slip relative to motor rotation and the significant speed reduction increases positional accuracy.
+              </p>
+
+              <figure>
+                <a href="./assets/Project 4 - Drawing Robot/2.png">
+                  <img 
+                  src="./assets/Project 4 - Drawing Robot/2_s.png"
+                  alt="Brainstorm sketch"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+                <figcaption>
+                  Some preliminary ideas for controlling the length of the triangle legs.
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                I designed a single unit to be 3D printed which would house each motor and leadscrew assembly. One interesting feature of this module is recesses for the nuts, allowing the motor screws to be tightened without having to fit a wrench over the nut. I also included mounting points for limit switches, but we ran out of time to implement these fully.
+              </p>
+
+              <figure>
+                <a href="./assets/Project 4 - Drawing Robot/3.png">
+                  <img 
+                  src="./assets/Project 4 - Drawing Robot/3_s.png"
+                  alt="Pivot units"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+                <figcaption>
+                  Pivot unit housing the motor, gearbox and leadscrew.
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                Initially we planned to use an electromagnetic solenoid or a DC gearmotor to drive the pen up or down. These ideas failed and we were forced by our deadline to use a simple hobby-grade servo. The rest of the design was fairly simple. We modeled the whole system in SolidWorks to ensure it could move like we envisioned.
+              </p>
+
+              <figure>
+                <a href="./assets/Project 4 - Drawing Robot/4.jpg">
+                  <img 
+                  src="./assets/Project 4 - Drawing Robot/4_s.jpg"
+                  alt="Rendered CAD model"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+                <figcaption>
+                  Rendered SolidWorks model of the entire robot.
+                </figcaption>
+              </figure>
+
+
+              <h3 class="project-details__content-title">Analysis</h3>
+
+              <p class="project-details__desc-para">
+                Given the non-linear nature of our system, it was impossible to derive an equation which would output motor angles for desired X-Y positions of the pen. Fortunately the reverse (called the 'forward kinematics') was possible. Using the geometry of the system, I derived the following equation.
+              </p>
+
+              $$ \bar{f} =  \begin{bmatrix} 
+                            f_x \\
+                            f_y 
+                            \end{bmatrix}
+
+                         =  \begin{bmatrix} 
+                            k(\theta_2^2 - \theta_1^2) + \frac{l}{2} \\
+                            \sqrt{k\theta_2^2 - [\frac{k(\theta_2^2 - \theta_1^2) + l^2}{2l}]} 
+                            \end{bmatrix}
+                            
+                            \text{where }
+                            
+                      k = (\frac{N_A}{P N_B})^2$$
+
+
+              <p class="project-details__desc-para">
+                This would be used later to iteratively approach a solution for the required motor angles. Full calculations can be found on the project website linked at the bottom of this page. To ensure that this control method would work before building all the hardware, we wrote a <a href="https://colab.research.google.com/drive/1BRjL2465k-pvViYOERConbHP8OWNDX8a?usp=sharing"><u>Google Collab</u></a> report to test it. The result was the animated .gif shown above.
+              </p>
+
+
+              <h3 class="project-details__content-title">Fabrication</h3>
+
+              <p class="project-details__desc-para">
+                Most parts were 3D printed due to the process's broad capabilities and fast turnaround time. We tried laser cutting the gears out of acrylic, but the melting effect of the laser made it impossible to get the detail we needed. This may have been a mistake in out laser settings, but we decided to just 3D print the gear too.
+              </p>
+
+              <figure>
+                <a href="./assets/Project 4 - Drawing Robot/5.jpg">
+                  <img 
+                  src="./assets/Project 4 - Drawing Robot/5_s.jpg"
+                  alt="Burned plastic gears"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+                <figcaption>
+                  Failed laser-cut gears. The clear plastic could have caused the problem, as well as our laser settings.
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                The stepper motors we used were refurbished or surplus units available for free in the lab. They appeared to be 5- or 6-wire stepper motors, so we had to modify them to work with our 4-wire driver. We did this by desoldering the small PCB which the motor coils were wired to, cutting a trace or two on the surface, and soldering it back in place.
+              </p>
+
+              <figure>
+                <a href="./assets/Project 4 - Drawing Robot/6.jpg">
+                  <img 
+                  src="./assets/Project 4 - Drawing Robot/6_s.jpg"
+                  alt="Stepper motor"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+                <figcaption>
+                  A cut trace on the stepper motor PCB converted it from a 5-wire to a 4-wire stepper.
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                The mounting holes on our leadscrew nuts were so close to the center that the heads of our mounting screws were interfering with the center part of the nut. To remedy this, we drilled and tapped four more holes for smaller screws slightly further from the center.
+              </p>
+
+              <figure>
+                <a href="./assets/Project 4 - Drawing Robot/7.png">
+                  <img 
+                  src="./assets/Project 4 - Drawing Robot/7_s.png"
+                  alt="Drawing of brass part"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+                <figcaption>
+                  Drawing and completed part (left). Installed leadscrew nut (right).
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                To make this easier, I printed out a 1:1 scale drawing of the hole locations, cut out the center bore from the paper and slid the drawing onto the physical nut. Then I could mark the hole locations directly onto the part with a center punch.
+              </p>
+
+
+              <h3 class="project-details__content-title">Fabrication</h3>
+
+              <p class="project-details__desc-para">
+                All our software was written using microPython, an adaptation of python for microcontrollers. While it can be slower than C or C++, the ease of python programming and the access to standard python libraries made it well suited to this project. Our code used a cooperative multitasking structure, where a number of short, blocking tasks are run at frequent intervals.
+              </p>
+
+              <figure>
+                <a href="./assets/Project 4 - Drawing Robot/8.png">
+                  <img 
+                  src="./assets/Project 4 - Drawing Robot/8_s.png"
+                  alt="Task diagram"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+                <figcaption>
+                  Task diagram for the microcontroller.
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                The <b>Interface Task</b> handles the serial UI, taking commands from the user, printing feedback, and triggering either the Data Task or the Type Task, depending on the input. The state diagram below shows that a state exists for each of the drawing options which sends the appropriate data to the appropriate task.
+              </p>
+
+              <figure>
+                <a href="./assets/Project 4 - Drawing Robot/9.png">
+                  <img 
+                  src="./assets/Project 4 - Drawing Robot/9_s.png"
+                  alt="Finite State Diagram"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+                <figcaption>
+                  Finite State Machine for the Interface Task.
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                The <b>Data Task</b>> takes an .hpgl file representing the selected image, parses out the relevant X-Y points and outputs a set of motor angles to the Motor Task. These motor angles are calculated using the Newton-Raphson algorithm, which iterates through the forward kinematic equation from the Analysis section to find a solution for the desired motor angles for a given set of X-Y coordinates.
+              </p>
+
+              <p class="project-details__desc-para">
+                The <b>Motor Task</b> drives the motors to the target angles calculated by the Data Task. In the state diagram below, the three states of the Motor Task are shown. WAIT immediately forwards to the next state as long as the run variable is true. This allows the process to be stopped at any time by resetting the run variable. NEW_TARG assigns the next target angle to each motor from the list produced by Data Task. TRAVEL waits until both motors have neared their targets before starting the cycle over again.
+              </p>
+
+              <figure>
+                <a href="./assets/Project 4 - Drawing Robot/10.png">
+                  <img 
+                  src="./assets/Project 4 - Drawing Robot/10_s.png"
+                  alt="Finite State Diagram"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+                <figcaption>
+                  Finite State Machine for the Motor Task.
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                The <b>Type Task</b> is essentially the same as the data task, except that it takes a string input from the Interface Task and processes .hpgl files corresponding to the letters in the string.
+              </p>
+
+              <p class="project-details__desc-para">
+                The hardware is controlled via a few classes, which handle all the low-level driver settings and controls. Details on these classes can be found on the project website linked at the bottom of this page.
+              </p>
+
+
+              <h3 class="project-details__content-title">Results</h3>
+
+              <p class="project-details__desc-para">
+                Below are some samples of what the robot was able to draw, compared to the vector drawing it was given.
+              </p>
+
+              <figure>
+                <a href="./assets/Project 4 - Drawing Robot/11.png">
+                  <img 
+                  src="./assets/Project 4 - Drawing Robot/11_s.png"
+                  alt="The name 'Parker'"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+                <figcaption>
+                  Writing from the Type feature.
+                </figcaption>
+              </figure>
+
+              <figure>
+                <a href="./assets/Project 4 - Drawing Robot/12.png">
+                  <img 
+                  src="./assets/Project 4 - Drawing Robot/12_s.png"
+                  alt="Triangle Drawing"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+                <figcaption>
+                  Some wiggliness can be seen on the edges of this triangle due to the nature of our algorithm.
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                Clearly the robot is able to reproduce these shapes, and watching it do so if entertaining, even if it is a bit slow. Some jagged lines are visible on the drawing, which are due to the motors moving from point to point at full speed. If one motor reaches its target angle first, it simply stops and waits for the other. This effect is minimized when the lead screws are symmetrically extended as the motors must travel more similar distances. This could be improved by normalizing each motor's speed to the distance it must travel, ensuring that both motors reach their target at the same time. A sort of 'curve fit' could also be applied to the list of motor angles, which could have a smoothing effect on lower resolution .hpgl files. 
+              </p>
+
+              <p class="project-details__desc-para">
+                My favorite part about this project was the opportunity to develop both the hardware and software from scratch. I like working with both and seeing how they influence each other, and its not common to get a class which doesn't focus on one or the other.
+              </p>
+
+
+            </div>
+            
+            <div class="project-details__links">
+              <h3 class="project-details__content-title">More Details</h3>
+              <a
+                href="https://caleb-sav.github.io/"
+                class="btn btn--med btn--theme project-details__links-btn"
+                target="_blank"
+                >Build Documentation</a
+              >
+              <a
+                href="https://www.youtube.com/watch?v=HhL63wO71e4"
+                class="btn btn--med btn--theme-inv project-details__links-btn"
+                target="_blank"
+                >Video</a
+              >
+            </div>
+
+            <div class="project-details__links">
+              <h3 class="project-details__content-title">Contributers</h3>
+
+              <div class = "contributer_block">
+                <div class = "contributer_single">
+                  <div>
+                    <img src="assets/Contributers/parker.jpg"
+                    alt="Parker Tenney profile" class="contributer_logo-img"/>
+                  </div>
+                  <div>
+                    <p class="contributer_text">
+                      Parker Tenney
+                    </p>
+                    
+                    <a href="https://www.linkedin.com/in/parker-tenney-758bbb20b/" target="new">
+                      <img src="./assets/png/linkedin-ico.png" alt="icon" class="contributer_link-icon"/>
+                    </a>
+                    
+                  </div>
+                </div>
+                
+                
+                <div class = "contributer_single">
+                  <div>
+                    <img src="./assets/Contributers/calpoly_logo.png"
+                    alt="Calpoly logo" class="contributer_logo-img"/>
+                  </div>
+                  <div>
+                    <p class="contributer_text">
+                      Cal Poly
+                    </p>
+
+                    <a href="https://me.calpoly.edu/" target="new">
+                      <img src="./assets/png/website-ico.png" alt="icon" class="contributer_link-icon"/>
+                    </a>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Caleb Savard</h4>
+            <!-- <p class="main-footer__short-desc">
+              LIkes hiking and good pasta.
+            </p> -->
+            
+            <a href="./#contact" class="main-footer__short-desc"><u>Contact</u></a>
+            <a href="https://www.linkedin.com/in/caleb-savard-89a98b159/" class="main-footer__short-desc" target="new"><u>LinkedIn</u></a>
+          </div>
+        </div>
+
+        <div class="main-footer__lower">
+          
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

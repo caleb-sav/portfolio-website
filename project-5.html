@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Projects - Sumo Robot</title>
+    <meta name="description" content="Sumo Robot" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/jpeg/profile-image.jpeg"
+              alt="Profile Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Caleb Savard</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./about.html" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./project-main.html" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./about.html"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./project-main.html"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+
+          <h1 class="heading-primary">Sumo Robot</h1>
+
+          <div class="project-details__content-main">
+
+            <div class="project-details__showcase-img-cont">
+              <a href="./assets/Project 5 - Sumo Robot/Main.jpg">
+              <img
+                src="./assets/Project 5 - Sumo Robot/Main_s.jpg"
+                alt="Small robot with remote control"
+                class="project-details__showcase-img"/>
+              </a> 
+            </div>
+  
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Skills Showcased</h3>
+              <div class="skills">
+                <div class="skills__skill">Embedded C++</div>
+                <div class="skills__skill">Driver Programming</div>
+                <div class="skills__skill">PCB Design</div>
+                <div class="skills__skill">Datasheet Comprehension</div>
+                <div class="skills__skill">Fusion 360</div>
+                <div class="skills__skill">3D Printing</div>
+                <div class="skills__skill">Mechanical Design</div>
+                <div class="skills__skill">Soldering</div>
+                <div class="skills__skill">Fabrication</div>
+              </div>
+            </div>
+
+            <div class="project-details__desc">
+
+              <p class="project-details__desc-para">
+                A sumo robot is built to autonomously push the other robot out of a ring on the floor. This robot was built by two teammates and I to compete in our class's competition. We designed and built the entire robot from scratch, including the PCB and code. While two of our sensors failed in combat due to EMI problems, the remaining sensors and hardware were robust enough to carry our team to first place among the five teams in the class.
+              </p>
+
+              <p class="project-details__desc-para">
+                As the first mobile robot I have built, I learned a lot about the convenience of wireless diagnostics and datalogging, as well as accessible reset and power switches.
+              </p>
+
+              <h3 class="project-details__content-title">Background</h3>
+
+              <p class="project-details__desc-para">
+                To prioritize reliability and clever code and strategy, our professor limited the size, weight, and power of our robots as shown in the table below. 
+              </p>
+
+              <figure>
+                <table>
+                  <tr><th>Mass</th>                   <td>1.5 kg</td></tr>
+                  <tr><th>Bounding Box</th>           <td>180mm x 180mm x 100mm</td></tr>
+                  <tr><th>Battery Voltage</th>        <td>12.6V (3S LiPo)</td></tr>
+                  <tr><th>Battery Capacity</th>       <td>17 W-h</td></tr>
+                  <tr><th>Motor Size</th>             <td>Ø25mm x 32mm</td></tr>
+                  <tr><th>Motor Quantity</th>         <td>4</td></tr>
+                  <tr><th>Motor Power (combined)</th> <td>50W</td></tr> 
+                </table>
+                <figcaption>
+                  Project maximum specs.
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                For safety, we were required to include a wireless 'deadman' switch to shut down the robot during a match in the case of a malfunction. The hardware for this feature would also be used to allow remote control of the robot for testing purposes. Finally, our professor required us to program a simple BMS to prevent the battery from over discharging. 
+              </p>
+
+              <h3 class="project-details__content-title">Mechanical Design</h3>
+
+              <p class="project-details__desc-para">
+                Since traction was a huge part of the competition, we decided to place a motor on each of the four wheels. We also invested in the best urethane wheels we could find, which had a superior coefficient of friction to the standard silicone. 
+              </p>
+
+              <p class="project-details__desc-para">
+                We built the chassis out of clear acrylic because we could laser cut it and we had some already. This turned out to be a mistake, as acrylic is very hard to work because it is so brittle. Regardless, being able to see into the robot was cool!
+              </p>
+
+              <figure>
+                <a href="./assets/Project 5 - Sumo Robot/1.png">
+                  <img 
+                  src="./assets/Project 5 - Sumo Robot/1_s.png"
+                  alt="Robot chassis"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+
+                <figcaption>
+                  Acrylic chassis and sheet metal scoop
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                Like almost all sumo robots, we designed a scoop for the front. The goal of this component was to get underneath the opponent, removing weight from their tires and adding weight to our own. We made our scoop from sheet metal so it would be strong enough to take the hits and thin enough to get under the opponent. We also over drilled the mounting holes so we could adjust it to be as low to the ground as possible without scraping. At first, we planned to drill and tap the mount points into the acrylic frame. The acrylic proved too brittle for that, so we 3D printed corner blocks which would stiffen the frame and provide a mount point for the scoop. Threaded brass inserts would be melted into these blocks.
+              </p>
+
+              <figure>
+                <a href="./assets/Project 5 - Sumo Robot/2.png">
+                  <img 
+                  src="./assets/Project 5 - Sumo Robot/2_s.png"
+                  alt="Scoop mount blocks"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+
+                <figcaption>
+                  The yellow 3D printed blocks stiffen the frame and provide a mounting point for the scoop.
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                Given the diameter of our wheels, the weight of the robot, and the coefficient of static friction for urethane, we calculated each wheel being able to withstand 92.36 oz-in of torque before slipping. Using this value, we selected a motor that could produce 100 oz-in. The gearing on these motors made them a little slower than the competition, but the greater torque proved more valuable. 
+              </p>
+
+              <h3 class="project-details__content-title">Electrical Design</h3>
+
+              <p class="project-details__desc-para">
+                The PCB is powered by a 3S Li-ion battery (12 V), which feeds through an automotive fuse and a MOSFET wired to provide reverse-polarity protection.
+              </p>
+
+              <figure>
+                <a href="./assets/Project 5 - Sumo Robot/3.png">
+                  <img 
+                  src="./assets/Project 5 - Sumo Robot/3_s.png"
+                  alt="Wiring Diagram"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+
+                <figcaption>
+                  High-level wiring diagram. The detailed schematic can be found at the bottom of the page.
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                The microcontroller is an STM32F411CEU6. For simplicity and commonality, this was specified by our professor. We selected supporting capacitors and oscillators per datasheet recommendations. For simplicity, we omitted a USB port and made our serial and programming connection via an external FTDI module, the ST-link.
+              </p>
+
+              <figure>
+                <a href="./assets/Project 5 - Sumo Robot/4.jpg">
+                  <img 
+                  src="./assets/Project 5 - Sumo Robot/4_s.jpg"
+                  alt="ST-link"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+
+                <figcaption>
+                  ST-link FTDI module. We used this for a USB serial connection for programming and troubleshooting.
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                In case of future modifications or repairs, we included pin headers for each of the voltage rails, as well as any unused GPIO pins. We ended up using one of these pins to control a status LED which illuminated when a low-voltage shutdown was active.
+              </p>
+
+              <p class="project-details__desc-para">
+                For sensors, we started with four IR line sensors, one on each corner. These detect if the robot is about to exit the ring. Due to shipping delays with our preferred sensor, we ended up using a different larger sensor from another team. To make them fit in the rear of the robot, we had to resolder the IR emitter/detector to a smaller piece of PCB, connecting it to the processing unit with short wires.
+              </p>
+
+              <figure>
+                <a href="./assets/Project 5 - Sumo Robot/5_6.jpg">
+                  <img 
+                  src="./assets/Project 5 - Sumo Robot/5_6_s.jpg"
+                  alt="Original line sensor"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+
+                <figcaption>
+                  (Left) Original line sensor, with the IR emitter/detector on the left end. (Right) IR emitter/detector on mounted on the remote PCB.
+                </figcaption>
+              </figure>
+
+              <figure>
+                <a href="./assets/Project 5 - Sumo Robot/7.png">
+                  <img 
+                  src="./assets/Project 5 - Sumo Robot/7.png"
+                  alt="Installed IR sensor"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+
+                <figcaption>
+                  Line sensor installed. The circle on the left shows the remove IR unit, while the board on the right is the original sensor.
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                Mounted to the front scoop with a 3D printed bracket, we had a Time-of-Flight range sensor to detect the opponent at a distance. Time-of-Flight sensors are not susceptible to sunlight like IR sensors, or to interference like ultrasonic sensors. Initially, we selected a VL6180X, but at the last minute, we switched to a VL53L0X for the improved range.
+              </p>
+
+              <figure>
+                <a href="./assets/Project 5 - Sumo Robot/8.jpg">
+                  <img 
+                  src="./assets/Project 5 - Sumo Robot/8_s.jpg"
+                  alt="Time of Flight sensor"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+
+                <figcaption>
+                  VL52L0X Time of Flight sensor.
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                Attached to the chassis was a BNO055 IMU from Adafruit. The idea behind this sensor was to detect impacts on the robot. That way, if an opponent crashed into us, we would know from what direction and be able to react accordingly.
+              </p>
+
+              <h3 class="project-details__content-title">Fabrication</h3>
+
+              <p class="project-details__desc-para">
+                After laying out the schematic, it was time to route the PCB using Fusion 360 (formerly Eagle). We used a 4-layer design because of our multiple voltage rails and to allow larger power and ground planes for the high-current 12V rail.
+              </p>
+
+              <figure>
+                <a href="./assets/Project 5 - Sumo Robot/9.JPG">
+                  <img 
+                  src="./assets/Project 5 - Sumo Robot/9_s.JPG"
+                  alt="Circuit board routing"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+
+                <figcaption>
+                  Routing of the PCB. The large planes are for the 12V power and ground.
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                We had the PCB manufactured through JLCPCB and it arrived with a solder mask included. After laying down the solder paste and placing the components, we used a hot plate to reflow the board. I did a few minor touch-ups with a soldering iron and the board was operational.
+              </p>
+
+              <figure>
+                <a href="./assets/Project 5 - Sumo Robot/10.jpg">
+                  <img 
+                  src="./assets/Project 5 - Sumo Robot/10_s.jpg"
+                  alt="Placing components"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+
+                <figcaption>
+                  Placing components on the PCB after the solder paste had been applied.
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                Mechanically we had to make a few modifications. First was the 3D printed scoop mount mentioned previously. We also noticed that we would have to lower the wheels to prevent the bottom from scraping on the ground. Logan milled a little off the bottom of the motor mounts to make this happen.
+              </p>
+
+              <h3 class="project-details__content-title">Software</h3>
+
+              <p class="project-details__desc-para">
+                All the code for the project was written in C++ using ST's CUBE IDE. This software automatically generates code for hardware setup like pin configurations, timers, and callbacks while still allowing direct access to these features. Our main loop consists of a few tasks in a cooperative multitasking structure, as well as a few other features. The main Finite State Machine which handles decision-making is shown below.
+              </p>
+
+              <figure>
+                <a href="./assets/Project 5 - Sumo Robot/11.png">
+                  <img 
+                  src="./assets/Project 5 - Sumo Robot/11_s.png"
+                  alt="FSM diagram"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+
+                <figcaption>
+                  Finite state machine diagram showing the decisionmaking operation of the robot.
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                While in the Searching state, the robot would drive forward until one of the front line sensors detected the edge of the arena. Then it would make a reversing turn until the rear line sensor detected the edge and drive across the arena again. This way, it crisscrossed the arena in a star patten to find its opponent.
+              </p>
+
+              <figure>
+                <a href="./assets/Project 5 - Sumo Robot/12.gif">
+                  <img 
+                  src="./assets/Project 5 - Sumo Robot/loQuality.gif"
+                  alt="Robot moving in search pattern"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+
+                <figcaption>
+                  Searching pattern of the robot.
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                The attack state would apply more power to the motors and would keep doing so until the Time-of-flight sensor no longer detected the opponent in front of it. The defense state would be triggered by an impact and would consist of an evasive maneuver.
+              </p>
+
+              <p class="project-details__desc-para">
+                Drivers were written for each of the components. APIs were available for the IMU and the Time-of-flight sensor, but they were designed for Arduino and had to be modified to work with the CUBE IDE. I was in charge of the Time-of-flight driver, which I ended up building twice since we switched sensors at the last minute. That was a long day in the lab…
+              </p>
+
+              <h3 class="project-details__content-title">Results</h3>
+
+              <p class="project-details__desc-para">
+                As we began testing our robot we noticed a few problems with our IMU and Time-of-flight sensor. First, the IMU signal for the abrupt halt at the edge of the arena was stronger than the signal from a real collision. We would need more code to ignore acceleration induced by our own movements, and we didn't have time for that. We could have still used it to detect T-bone collisions if it weren't for our second problem. Even though both sensors worked well on the bench, they rarely worked in the ring. Once the robot started moving, we got communication errors with these sensors, so we eventually suspected a problem with the I2C bus. Other teams were having similar problems and we thought EMI from spinning motors was causing it. On further research, we learned that I2C is very sensitive to such interference and is not recommended for this application.
+              </p>
+
+              <p class="project-details__desc-para">
+                Lacking time to fix the problem, we opted to drop the attack and defense states and compete only in the searching state. The robot was limited on power and blind, but its robust motors and tires and low front scoop were enough to succeed. We placed first out of 5 teams.
+              </p>
+
+              <div class="videoWrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RmpW-BnhHjc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+
+            </div>
+            
+            <div class="project-details__links">
+              <h3 class="project-details__content-title">More Details</h3>
+              <a
+                href="https://drive.google.com/file/d/1do5oiYTwoEowFMfxYnvWws5Enn2mCBYz/view?usp=sharing"
+                class="btn btn--med btn--theme project-details__links-btn"
+                target="_blank"
+                >Final Report</a>
+
+              <a
+                href="./assets/Project 5 - Sumo Robot/MainSchematic.pdf"
+                class="btn btn--med btn--theme project-details__links-btn"
+                target="new"
+                >Electrical Schematic</a>
+
+              <a href="https://drive.google.com/drive/folders/1ysn0qMYrix87_tCDql5ZnEV-vYfb1-i-?usp=sharing"
+              class="btn btn--med btn--theme project-details__links-btn"
+              target="new"
+              >Gerber Files</a>
+              
+            </div>
+
+
+            <div class="project-details__links">
+              <h3 class="project-details__content-title">Contributers</h3>
+
+              <div class = "contributer_block">
+                <div class = "contributer_single">
+                  <div>
+                    <img src="assets/Contributers/logan.jpg"
+                    alt="Logan Williamson profile" class="contributer_logo-img"/>
+                  </div>
+                  <div>
+                    <p class="contributer_text">
+                      Logan Williamson
+                    </p>
+                    
+                    <a href="https://www.linkedin.com/in/logan-bowditch-williamson/" target="new">
+                      <img src="./assets/png/linkedin-ico.png" alt="icon" class="contributer_link-icon"/>
+                    </a>
+
+                    <a href="https://wokka29.bitbucket.io/" target="new">
+                      <img src="./assets/png/website-ico.png" alt="icon" class="contributer_link-icon"/>
+                    </a>
+                    
+                  </div>
+                </div>
+
+                <div class = "contributer_single">
+                  <div>
+                    <img src="assets/Contributers/cole.jpg"
+                    alt="Cole Marin profile" class="contributer_logo-img"/>
+                  </div>
+                  <div>
+                    <p class="contributer_text">
+                      Cole Marin
+                    </p>
+                    
+                    <a href="https://www.linkedin.com/in/cole-marin/" target="new">
+                      <img src="./assets/png/linkedin-ico.png" alt="icon" class="contributer_link-icon"/>
+                    </a>
+                    
+                  </div>
+                </div>
+
+                <div class = "contributer_single">
+                  <div>
+                    <img src="./assets/Contributers/calpoly_logo.png"
+                    alt="Calpoly logo" class="contributer_logo-img"/>
+                  </div>
+                  <div>
+                    <p class="contributer_text">
+                      Cal Poly
+                    </p>
+
+                    <a href="https://me.calpoly.edu/" target="new">
+                      <img src="./assets/png/website-ico.png" alt="icon" class="contributer_link-icon"/>
+                    </a>
+
+                  </div>
+
+                </div>
+        
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Caleb Savard</h4>
+            <!-- <p class="main-footer__short-desc">
+              LIkes hiking and good pasta.
+            </p> -->
+            
+            <a href="./#contact" class="main-footer__short-desc"><u>Contact</u></a>
+            <a href="https://www.linkedin.com/in/caleb-savard-89a98b159/" class="main-footer__short-desc" target="new"><u>LinkedIn</u></a>
+          </div>
+        </div>
+
+        <div class="main-footer__lower">
+          
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
