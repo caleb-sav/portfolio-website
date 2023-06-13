@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Projects - RAV4 Seat Retrofit</title>
+    <meta name="description" content="Shingle Brush" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/jpeg/profile-image.jpeg"
+              alt="Profile Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Caleb Savard</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./about.html" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./project-main.html" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./about.html"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./project-main.html"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          
+          <h1 class="heading-primary">RAV4 Seat Retrofit</h1>
+
+          <div class="project-details__content-main">
+
+            <a href="./assets/Project 7 - RAV4 Seat Retrofit/Main.png" class="project-details__showcase-img-cont">
+              <img
+                src="./assets/Project 7 - RAV4 Seat Retrofit/Main_s.png"
+                alt="Car seat cushion 3D model"
+                class="project-details__showcase-img"
+              />
+            </a>
+  
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Skills Showcased</h3>
+              <div class="skills">
+                <div class="skills__skill">Photogrammetry</div>
+                <div class="skills__skill">Mechanical Design</div>
+                <div class="skills__skill">Fusion 360</div>
+                <div class="skills__skill">Fabrication</div>
+              </div>
+            </div>
+
+            <div class="project-details__desc">
+              
+              <p class="project-details__desc-para">
+                The purpose of this project was two-fold. First, to replace the decrepit front seats in my '97 RAV4. These seats would not only be in better condition, but they would also be more supportive in the turns and comfortable for road trips. Second, it was an excuse to experiment with Photogrammetry and 3D meshing as an engineering tool!
+              </p>
+              
+              <h3 class="project-details__content-title">Background</h3>
+              <p class="project-details__desc-para">
+                Photogrammetry is the process of generating a 3D model from hundreds of still images. for a more detailed description, check out <a href="https://www.artec3d.com/learning-center/what-is-photogrammetry" target="_blank"><u>Artec 3D's article</u></a>. While often used by 3D graphics artists and game designers, this tool could be used locate hard to measure features on parts or allow smooth curves to be matched in CAD. This could be very helpful for reverse engineering or retrofitting. But how easy is it to use? And can it provide the dimensional accuracy necessary for this kind of work? I would soon find out! (spoiler alert: it can do alright, but there are often better ways).
+              </p>
+
+              <h3 class="project-details__content-title">Design and 3D Model</h3>
+              <p class="project-details__desc-para">
+                The donor for these seats was a 2001 Toyota Celica GT I found at a local junkyard with about 180k miles. 4 years newer and 126k miles younger, these seats were in much better shape than my old ones! The RAV4 has a unique floorpan with a large driveshaft tunnel for the AWD variants. This, as well as the higher seating position, made it impossible to reuse the Celica seat rails. Instead, I decided to swap the Celica cushions and seat backs onto the RAV4 seat rails. Thanks to Toyota's consistent design philosophy, the seat back bolted right up. The seat bottom was a different story. Looking from the below, the bolt holes were close, but needed an adapter to fit properly.
+              </p>
+
+              <figure>
+                <a href="./assets/Project 7 - RAV4 Seat Retrofit/1.jpg">
+                  <img 
+                  src="./assets/Project 7 - RAV4 Seat Retrofit/1_s.jpg"
+                  alt="bottom of seat cushion"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+
+                  <figcaption>
+                    The bottom of the Celica seat cushions lined up the the RAV4 rails. I made a few notes about the location of the holes to double check against the results of the 3D model.
+                  </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                I started by taking a few photos of one of the bolt holes on the seat bottom as a test. From past experiments, I knew the shiny metal would be hard to capture, but I wanted to make sure. I was using the manual setting on my old Samsung Galaxy S10 camera saving .DNG files to minimize compression artifacts. To process the photos, I used <a href="https://alicevision.org/#meshroom" target="_blank"><u>Meshroom</u></a>, a free, open-source solution to photogrammetry. It's really versatile, way beyond what I've explored! I was happy with the detail on the cloth here, but it definitely had some trouble with the shiny surface.
+              </p>
+
+              <figure>
+                <a href="./assets/Project 7 - RAV4 Seat Retrofit/2.png">
+                  <img 
+                  src="./assets/Project 7 - RAV4 Seat Retrofit/2_s.png"
+                  alt="3D model compared to a photo for an untreated surface"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+
+                <figcaption>
+                  The shiny metal surface didn't scan well in this test.
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                To eliminate the shine, I draped some soaked newspaper or toilet paper over the metal parts, cutting holes for the bolt locations. In hindsight, I would have liked to use a dust or powder for better coverage around critical features. Commercial scanning sprays are available, but I've heard a little flour or baby powder can also be effective. Nevertheless, the paper gave decent results.
+              </p>
+
+              <figure>
+                <a href="./assets/Project 7 - RAV4 Seat Retrofit/3.png">
+                  <img 
+                  src="./assets/Project 7 - RAV4 Seat Retrofit/3_s.png"
+                  alt="3D model compared to a photo for a treated surface"
+                  class="project-details__showcase-img">
+                </a>
+
+                <figcaption>
+                  The prepared surface, while showing the texture of the paper, doesn't have any holes or large artifacts.
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                Meshroom can produce a model, but that model isn't very useable yet. With the model imported into <a href="https://www.meshlab.net/" target="_blank"><u>Meshlab</u></a> (another free program), you can see it isn't oriented properly at all. What's more, it isn't scaled properly and it contains nearly 3.5 million faces - way too much detail for even my gaming laptop!
+              </p>
+
+              <figure>
+                <a href="./assets/Project 7 - RAV4 Seat Retrofit/4.png">
+                  <img 
+                  src="./assets/Project 7 - RAV4 Seat Retrofit/4_s.png"
+                  alt="unprocessed model"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+
+                <figcaption>
+                  The unprocessed output of Meshroom. Notice the table surface and the floating geometry. This model contains nearly 3.5 million faces - far too many!
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                Meshlab is great at handling huge meshes like this. The first thing to do was scale the model properly. I did this by measuring between distinct features on the model and in real life, then calculating a scaling factor to correct for the difference. I regret not including an easily scannable object of known size for this purpose, as my tape measure was probably not giving me the most accurate measurements! Next, I oriented the model to the XYZ axes using the bolt mount planes and the flat sides as reference. Meshlab has tools to do this by averaging the position of a number of selected points, which did fairly well, but wasn't perfect. Finally, I trimmed away the flat table surface and any floating geometry, then scaled down the detail on all the non-critical features using the 'Decimate' function. This brought the number of faces down to 1.75 million - still far to many in hindsight, but certainly more manageable.
+              </p>
+              
+              <figure>
+                <a href="./assets/Project 7 - RAV4 Seat Retrofit/5.png">
+                  <img 
+                  src="./assets/Project 7 - RAV4 Seat Retrofit/5_s.png"
+                  alt="processed model"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+
+                <figcaption>
+                  The model after it has been cleaned up. Now it's down to 1.75 million faces - still too many in hindsight.
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                I repeated the same process for the seat rails, this time focusing only on the rails themselves and erasing everything else. Then I imported these models into Fusion 360. Aligning and joining these models turned out to be very challenging since there were not real flat faces to work with. I made a few reference planes, one for each set of bolt points (grouping front and back), but even these weren't exactly parallel since each one was just defined from 3 points on the mesh.
+              </p>
+
+              <figure>
+                <a href="./assets/Project 7 - RAV4 Seat Retrofit/6.png">
+                  <img 
+                  src="./assets/Project 7 - RAV4 Seat Retrofit/6_s.png"
+                  alt="both models in Fusion 360"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+
+                <figcaption>
+                  Once the models were imported into Fusion 360, aligning them was a challenge.
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                Finally, I could draw up an adapter. The design was simple, with the holes being located by Fusion's sketch-from-mesh feature. 
+              </p>
+
+              <figure>
+                <a href="./assets/Project 7 - RAV4 Seat Retrofit/7.png">
+                  <img 
+                  src="./assets/Project 7 - RAV4 Seat Retrofit/7_s.png"
+                  alt="Adapter in CAD model"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+
+                <figcaption>
+                  Drawing up the adapter itself wasn't too hard. Fusion's sketch-from-mesh tool was very useful for locating the holes on the adapter.
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                One advantage to designing this way is the ability to foresee clearance issues with a digital cutaway. Here, the nut receiving the bolt from the seat rails is shown interfering with the seat cushion. In real life, this would have been hard to see since the seat cushion comes down around this area and blocks your view.
+              </p>
+
+              <figure>
+                <a href="./assets/Project 7 - RAV4 Seat Retrofit/8.png">
+                  <img 
+                  src="./assets/Project 7 - RAV4 Seat Retrofit/8_s.png"
+                  alt="Part interference"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+
+                <figcaption>
+                  Thanks to the 3D model, I could see that this nut would interfere with the seat bottom.
+                </figcaption>
+              </figure>
+              
+              <p class="project-details__desc-para">
+                Before settling on a final design, I iterated through two laser-cut cardboard versions. The first highlighted some problems with my model and the way some sketches were projecting. Scaling the seat rail model down by 98.63% and fixing those sketches helped a lot.
+              </p>
+
+              <figure>
+                <a href="./assets/Project 7 - RAV4 Seat Retrofit/9.png">
+                  <img 
+                  src="./assets/Project 7 - RAV4 Seat Retrofit/9_s.png"
+                  alt="cardboard model"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+
+                <figcaption>
+                  The first laser-cut cardboard prototype showing some misalignment of the holes.
+                </figcaption>
+              </figure>
+
+              <p class="project-details__desc-para">
+                The second version fit the bolt holes, but as I tried to install the seat bottom on the rails, I realized that it located the seat bottom about 3 inches too far backward and that it was interfering with the seat back. After updating that, I bought some steel flat bar and got to work!
+              </p>              
+
+              <h3 class="project-details__content-title">Fabrication</h3>
+
+              <p class="project-details__desc-para">
+                Building these brackets took me a lot longer than I expected! 4.5 hrs for the first one and 2.25 hrs for the second. I enjoyed getting to spend a Saturday in the shop, but it probably would have been worth it to outsource this to someone with a fiber laser. I made it out of 3/16" x 1.75" flat steel because 1/8" stock was not available. Needless to say, it's beefy!
+              </p>
+
+              
+              <figure>
+                <a href="./assets/Project 7 - RAV4 Seat Retrofit/10.jpg">
+                  <img 
+                  src="./assets/Project 7 - RAV4 Seat Retrofit/10_s.jpg"
+                  alt="Welding jig"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+
+                <figcaption>
+                  I put together this jig to help keep the components square when I welded them.
+                </figcaption>
+              </figure>
+
+              <figure>
+                <a href="./assets/Project 7 - RAV4 Seat Retrofit/11.jpg">
+                  <img 
+                  src="./assets/Project 7 - RAV4 Seat Retrofit/11_s.jpg"
+                  alt="weld bead"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+
+                <figcaption>
+                  If I did this again, I would grind a bigger chamfer on these parts before welding so the bead didn't sit so high. I had to do a lot of grinding to get it flat!
+                </figcaption>
+              </figure>
+
+              <figure>
+                <a href="./assets/Project 7 - RAV4 Seat Retrofit/12.jpg">
+                  <img 
+                  src="./assets/Project 7 - RAV4 Seat Retrofit/12_s.jpg"
+                  alt="adapter and drawing"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+
+                <figcaption>
+                  All the cutting is finished. I tried to use a plasma cutter for the long straight cuts (with a fence of course), but they still turned out a little jagged.
+                </figcaption>
+              </figure>
+
+              <figure>
+                <a href="./assets/Project 7 - RAV4 Seat Retrofit/13.jpg">
+                  <img 
+                  src="./assets/Project 7 - RAV4 Seat Retrofit/13_s.jpg"
+                  alt="side profile of the adapter"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+
+                <figcaption>
+                  You can see from the gap on the back mount point that either my bending or the CAD model was a little off in the angles. Nothing some bolts can't fix!
+                </figcaption>
+              </figure>
+
+              <figure>
+                <a href="./assets/Project 7 - RAV4 Seat Retrofit/14.jpg">
+                  <img 
+                  src="./assets/Project 7 - RAV4 Seat Retrofit/14_s.jpg"
+                  alt="adapter installed"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+
+                <figcaption>
+                  Adapter installed on the seat rails. I painted it with an outdoor enamel for longevity.
+                </figcaption>
+              </figure>
+
+              <figure>
+                <a href="./assets/Project 7 - RAV4 Seat Retrofit/15.jpg">
+                  <img 
+                  src="./assets/Project 7 - RAV4 Seat Retrofit/15_s.jpg"
+                  alt="Installing brush"
+                  class="project-details__showcase-img"
+                  loading="lazy">
+                </a>
+
+                <figcaption>
+                  The seats installed in my car. A little dirty, still need to hit them with some uphostery cleaner.
+                </figcaption>
+              </figure>
+
+
+              <h3 class="project-details__content-title">Conclusion</h3>
+
+              <p class="project-details__desc-para">
+                After using photogrammetry in a real project, I can see it has some clear advantages and disadvantages.
+              </p>
+
+              <p class="project-details__desc-para">
+                <b>Advantages</b>
+              </p>
+
+              <p class="project-details__desc-para">
+                <u>Accessibility</u> - All I needed was a smartphone and a computer. More computing power definitely helps though!
+              </p>
+              <p class="project-details__desc-para">
+                <u>Captures 3D space well</u> - For complex 3D curves or surfaces, I dont think there is an affordable substitute.
+              </p>
+
+              <p class="project-details__desc-para">
+                <u>Accuracy</u> -	It's hard to tell which problems were from my fabrication techniques and which were from the photogrammetry process, but all the measurements I made on the model seemed to be within about 1/16” of the truth. I'm sure this could be improved with better photogrammetry procedures, but for this project, that's plenty!
+              </p>
+
+              <p class="project-details__desc-para">
+                <b>Disadvantages</b>
+              </p>
+
+              <p class="project-details__desc-para">
+                <u>Time consuming</u> - Taking all the photos, generating the model, cleaning up the model all takes a lot of time, and all that has to happen before you can even get the model into CAD. If you realize something is wrong at that point, you might have to start over.
+              </p>
+              <p class="project-details__desc-para">
+                <u>Surface-dependent</u> - If a surface is shiny or transparent, it has to be prepared, which is also time consuming.
+              </p>
+
+              <p class="project-details__desc-para">
+                <u>Lighting-dependent</u> -	If you don't have studio lighting, you have to wait for the sun or the clouds to cooperate.
+              </p>
+
+              <p class="project-details__desc-para">
+                <u>Resource intensive</u> -	-	CAD with large meshes can require serious computing power.
+              </p>
+
+              <p class="project-details__desc-para">
+                If I were to do this again, I would be sure to add something with sharp edges to the scanning area for scale. I would also leave the bolts in the holes during scanning since the bolts would likely scan better than the dark internal threads. Finally, I would spend a little more time preparing the surface for scanning, using a powder or dust instead of the soaked paper to get better detail on the features that mattered.
+              </p>
+
+              <p class="project-details__desc-para">
+                In the case of this project, a few hours with some cardboard and a box knife could have probably produced similar results. However, for more complex parts, photogrammetry could be worth all the effort. In the end, photogrammetry is the poor man's laser scanning, and it trades up-front cost for backend labor. As a hobbyist without an engineering department budget, I will keep photogrammetry in my arsenal, but only for projects that really need it.
+              </p>
+
+              <p class="project-details__desc-para">
+                For anyone looking to recreate the project, I've included some build files below. I would recommend having the adapters made by Send-Cut-Send or Fabworks (or any of the other online fabricators), even if you have your own machine shop. Laser cutting is just way easier and more accurate than cutting, welding, and drilling flat bar. I can't guarantee that you'll get a fitting part since I built mine by hand and could have made some fabrication errors, but if it doesn't fit, please let me know so I can update the drawing!
+              </p>
+              
+            </div>
+            
+            <div class="project-details__links">
+              <h3 class="project-details__content-title">More Details</h3>
+              <a
+                href="https://drive.google.com/drive/folders/1As0A79pXSIliy7zeb80RKJZCJS37xTcm?usp=sharing"
+                class="btn btn--med btn--theme project-details__links-btn"
+                target="_blank"
+                >Build Files</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Caleb Savard</h4>
+            <!-- <p class="main-footer__short-desc">
+              LIkes hiking and good pasta.
+            </p> -->
+            
+            <a href="./#contact" class="main-footer__short-desc"><u>Contact</u></a>
+            <a href="https://www.linkedin.com/in/caleb-savard-89a98b159/" class="main-footer__short-desc" target="new"><u>LinkedIn</u></a>
+          </div>
+        </div>
+
+        <div class="main-footer__lower">
+          
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
