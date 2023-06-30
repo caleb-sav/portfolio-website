@@ -865,16 +865,16 @@ figure {
 .project-item > a { width: 100%; }
 
 
-.project-item > a:hover img{ transform: scale(1.1); }
+.project-item:hover img{ transform: scale(1.1); }
 .project-item:hover {background-color: whitesmoke;}
 
 .project-img {
   position: relative;
-  width: 100%;
+  width: 95%;
   border-radius: 3px;
   overflow: hidden;
   margin-bottom: .5rem;
-  margin-top: 0;
+  margin-top: 2%;
 }
 
 
@@ -888,10 +888,16 @@ figure {
 .project-categories,
 .project-description { margin-left: 5px; margin-right: 5px; }
 
-.project-title {
+.project-title,
+.project-title_mobile {
   line-height: 1.5;
   font-size: 2.2rem;
   margin-bottom: 0.5rem;
+}
+
+.project-title_mobile {
+  visibility: hidden;
+  text-align:center;
 }
 
 .project-description {
@@ -918,6 +924,14 @@ figure {
 @media (max-width: 420px) {
   .project-list {
     grid-template-columns: 1fr;
+  }
+
+  .project-title{
+    visibility: hidden;
+  }
+
+  .project-title_mobile{
+    visibility: visible;
   }
 }
 
