@@ -874,7 +874,7 @@ figure {
   border-radius: 3px;
   overflow: hidden;
   margin-bottom: .5rem;
-  margin-top: 2%;
+  margin-top: 1.5rem;
 }
 
 
@@ -896,7 +896,7 @@ figure {
 }
 
 .project-title_mobile {
-  visibility: hidden;
+  display: none;
   text-align:center;
 }
 
@@ -927,11 +927,11 @@ figure {
   }
 
   .project-title{
-    visibility: hidden;
+    display: none;
   }
 
   .project-title_mobile{
-    visibility: visible;
+    display: block;
   }
 }
 
